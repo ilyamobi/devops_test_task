@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <p><strong>1) Подготовить код терраформ для подготовки 2-х серверов для приложения и 1 сервером с postgres с балансировщиком и подключенным единым отдельным сервисом хранилища s3</strong></p>
+<p>``</p>
+<ol start="2">
+<li>Есть 2 репозитория:
+1.1. Бэк с++ - ip
+1.2 Front React - ip
+База данных:
+База данных postgres на отдельном сервере</li>
+</ol>
+<p>Подготовить docker compose по сборке этого в общий контейнер</p>
+<ol start="3">
+<li>Написать код для разворачивания данного сервиса в CI/CD из GitLab в трех окуржениях: dev, stage и prod</li>
+</ol>
+
+        
+        
+    </body>
+    </html>
