@@ -1,0 +1,19 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - 8080:8080
+    environment:
+      - DB_HOST=dev_database_host
+      - DB_PORT=dev_database_port
+      - DB_USER=dev_database_user
+      - DB_PASSWORD=dev_database_password
+      - DB_NAME=dev_database_name
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - 3000:3000

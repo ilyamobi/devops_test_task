@@ -1,0 +1,19 @@
+version: '3'
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - 8080:8080
+    environment:
+      - DB_HOST=stage_database_host
+      - DB_PORT=stage_database_port
+      - DB_USER=stage_database_user
+      - DB_PASSWORD=stage_database_password
+      - DB_NAME=stage_database_name
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - 3000:3000
